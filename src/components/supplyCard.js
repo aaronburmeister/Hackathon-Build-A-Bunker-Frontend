@@ -5,7 +5,7 @@ export default function supplyCard(props) {
     const { supply } = props
 
     return(
-        <div class="supply-card" onClick={() => props.handleClick()}>
+        <div className="supply-card" onClick={() => props.handleClick(supply)}>
             <h3>{supply.name}</h3>
             <h4>Cost: {supply.cost}</h4>
             <h4>Value: {supply.value}</h4>

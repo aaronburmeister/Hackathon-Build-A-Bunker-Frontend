@@ -1,13 +1,11 @@
 import React from 'react';
-import YourSupplies from './components/yourSupplies'
-import SupplyShop from './components/supplyShop';
+import SupplyPage from './components/supplyPage'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <YourSupplies />
-      <SupplyShop />
+      <SupplyPage />
     </div>
   );
 }
