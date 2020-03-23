@@ -1,7 +1,8 @@
 
 import React, {Component} from 'react';
 import './App.css';
-import enviromentSetup from './enviromentSetup'
+
+import HouseCard from './components/houseCard'
 import UserSignup from './components/UserSignup'
 import UserSelect from './components/UserSelect'
 import SupplyPage from './components/supplyPage'
@@ -30,6 +31,7 @@ render() {
       <enviromentSetup />
       <addOn />
       <SupplyPage />
+      <HouseCard />
     </div>
   );
 }
