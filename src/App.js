@@ -1,7 +1,9 @@
+
 import React, {Component} from 'react';
 import './App.css';
 import enviromentSetup from './enviromentSetup'
 import UserSignup from './components/UserSignup'
+import SupplyPage from './components/supplyPage'
 // import addOn from './addOn'
 
 const apiUrl = 'http://localhost:3001/users'
@@ -25,7 +27,7 @@ render() {
       <UserSignup />
       <enviromentSetup />
       <addOn />
-
+      <SupplyPage />
     </div>
   );
 }
