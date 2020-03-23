@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import enviromentSetup from './enviromentSetup'
+// import addOn from './addOn'
 
-function App() {
+const apiUrl = 'http://localhost:3001/users'
+
+class App extends React.Component {
+  state = {
+    house: [],
+    addons: [],
+    disaters: []
+  }
+
+  componentDidMount(){
+    fetch(apiUrl)
+      .then(response => response.json())
+  }
+
+render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='enviroment'>
+      
+      <enviromentSetup />
+      <addOn />
+
     </div>
   );
+}
+
 }
 
 export default App;
