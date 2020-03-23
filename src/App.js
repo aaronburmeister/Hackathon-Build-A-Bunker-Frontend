@@ -20,7 +20,7 @@ class App extends React.Component {
 render() {
   return (
     <div className='enviroment'>
-      
+      <h1 className="title">Build-ABunker</h1>
       <enviromentSetup />
       <addOn />
 
