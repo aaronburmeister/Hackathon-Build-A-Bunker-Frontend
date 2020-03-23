@@ -1,7 +1,8 @@
 
 import React, {Component} from 'react';
 import './App.css';
-import enviromentSetup from './enviromentSetup'
+
+import HouseCard from './components/houseCard'
 import UserSignup from './components/UserSignup'
 import SupplyPage from './components/supplyPage'
 // import addOn from './addOn'
@@ -25,9 +26,9 @@ render() {
     <div className='enviroment'>
       <h1 className="title">Build-ABunker</h1>
       <UserSignup />
-      <enviromentSetup />
       <addOn />
       <SupplyPage />
+      <HouseCard />
     </div>
   );
 }
