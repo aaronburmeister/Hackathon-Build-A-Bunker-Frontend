@@ -4,7 +4,7 @@ import './yourSupplies.css'
 
 export default function yourSupplies (props) {
 
-    const { supplies, cash } = props;
+    const { supplies, cash, saveBunker } = props;
     const removeSupply = props.handleClick;
 
     const createSupplyCards = (supplies) => {
@@ -20,6 +20,7 @@ export default function yourSupplies (props) {
             <div id="your-supply-inventory">
                 {createSupplyCards(supplies)}
             </div>
+            <button onClick={() => saveBunker()}>Save</button>
         </div>
     );
 }
