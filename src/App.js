@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import enviromentSetup from './enviromentSetup'
+import UserSignup from './components/UserSignup'
 // import addOn from './addOn'
 
 const apiUrl = 'http://localhost:3001/users'
@@ -21,6 +22,7 @@ render() {
   return (
     <div className='enviroment'>
       <h1 className="title">Build-ABunker</h1>
+      <UserSignup />
       <enviromentSetup />
       <addOn />
 
